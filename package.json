@@ -1,36 +1,36 @@
 {
-  "name": "ts-express-tdd-template",
+  "name": "web-socket-example",
   "version": "0.0.1",
-  "description": "A typescript project template using express with supertest for TDD",
-  "main": "index.js",
+  "description": "An example websocket project",
+  "main": "server/server.js",
   "scripts": {
     "build": "npx tsc",
-    "start": "node ./dist/index",
+    "server": "node ./dist/server/server",
+    "client": "node ./dist/client/client",
     "test": "mocha dist/tests/**.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Reesy/ts-express-tdd-template.git"
+    "url": "git+https://github.com/Reesy/web-socket-example.git"
   },
   "keywords": [
     "Typescript",
-    "REST",
     "TDD",
     "supertest",
-    "API",
-    "backend"
+    "backend",
+    "sockets"
   ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Reesy/ts-express-tdd-template/issues"
+    "url": "https://github.com/Reesy/web-socket-example/issues"
   },
-  "homepage": "https://github.com/Reesy/ts-express-tdd-template#readme",
+  "homepage": "https://github.com/Reesy/web-socket-example#readme",
   "dependencies": {
-    "@types/express": "^4.17.13",
     "@types/node": "^16.6.2",
-    "express": "^4.17.1",
-    "typescript": "^4.3.5"
+    "@types/ws": "^7.4.7",
+    "typescript": "^4.3.5",
+    "ws": "^7.5.5"
   },
   "devDependencies": {
     "@types/chai": "^4.2.21",

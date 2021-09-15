@@ -32,7 +32,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/index.ts",
+            "program": "${workspaceFolder}/server/server.ts",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
